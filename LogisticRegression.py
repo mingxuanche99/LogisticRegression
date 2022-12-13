@@ -32,6 +32,7 @@ class LogisticRegression:
         plt.plot(loss_record, 'b', label='loss')
         plt.ylabel('loss')
         plt.xlabel('epoch')
+        plt.title('Loss Changing over Training Epochs')
         plt.legend()
         plt.show()
     def predict(self,X):
@@ -71,7 +72,12 @@ class LogisticRegression:
             ax1 = plt.subplot(1,2,1)
             plt.scatter(axis_x_gt_0, axis_y_gt_0, c='r')
             plt.scatter(axis_x_gt_1, axis_y_gt_1, c='b')
+            ax1.set_title('Ground Truth Labels')
+            ax1.set_ylim(10, 35)
+
             ax2 = plt.subplot(1,2,2)
+            ax2.set_ylim(10, 35)
+            ax2.set_title('Predicted Labels')
             plt.scatter(axis_x_pred_0, axis_y_pred_0, c='r')
             plt.scatter(axis_x_pred_1, axis_y_pred_1, c='b')
             x_points = np.linspace(axis_x.min()-1, axis_x.max()+1, 100)
