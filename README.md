@@ -10,7 +10,7 @@ The logistic function is of the form:
 
 $p(x)=\frac{1}{1+e^{-(Wx+b)}}$ 
 
-where $W$ and $b$ is the parameter to be estimated. Thus, in implementation, we firstly define self.W and self.b.
+where $W$ and $b$ are the parameters to be estimated. Thus, in implementation, we firstly define self.W and self.b.
 
 ### **1.2 Fit**
 Given the $p(x)$ is the predicted probability and $y$ is the ground-truth. Define $lr$ as the learning rate during optimization.
@@ -42,7 +42,7 @@ $p(x)=\frac{1}{1+e^{-(Wx+b)}}$
 
 ## 2. Environment preparation:
 
-We require a the environment of python 3.8, with packages including numpy, matplotlib, sklearn.
+We require an environment of python 3.8, with packages including numpy, matplotlib, sklearn.
 
 
 ## 3. Demo dataset:
