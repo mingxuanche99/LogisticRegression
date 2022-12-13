@@ -53,4 +53,4 @@ We load the dataset from sklearn.datasets
 
 This is a breast cancer wisconsin dataset for binary classification. The dataset are with 569 samples, each of which has a feature length of 30. 
 
-The objective of logistic is to predict a probability between 0-1 for negative/positive classification.
+The objective of logistic function is to predict a probability between 0-1 for negative/positive classification.
