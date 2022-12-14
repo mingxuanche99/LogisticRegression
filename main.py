@@ -6,6 +6,6 @@ X=cancer.data
 X=X[:,:2]
 y=cancer.target
 X_train,X_test,y_train,y_test=train_test_split(X,y)
-LR=LogisticRegression()
+LR=LogisticRegression(learn_rate=0.001, iter=10000)
 LR.fit(X_train,y_train)
 LR.score(X_test,y_test)

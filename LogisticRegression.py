@@ -10,6 +10,10 @@ class LogisticRegression:
         self.b=0
 
     def fit(self,X_train,Y_train):
+        '''
+        X: (num_sample, dim)
+        Y: (num_sample, )
+        '''
         self.W=np.zeros((X_train.shape[1],1))
         X_train = X_train.T
         Y_train = Y_train.reshape(1,Y_train.shape[0])
@@ -36,6 +40,9 @@ class LogisticRegression:
         plt.legend()
         plt.show()
     def predict(self,X):
+        '''
+        X: (num_sample, dim)
+        '''
         X_train=X.T
         Y = sigmoid(np.dot(self.W.T, X_train) + self.b)
         return Y
