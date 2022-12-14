@@ -2,17 +2,17 @@
 
 ## 1. User Guide:
 ### **1.1 Class**
-####LogisticRegression.LogisticRegression(learn_rate=0.001, iter=10000)
+#### LogisticRegression.LogisticRegression(learn_rate=0.001, iter=10000)
 Our tool is a class described in LogisticRegression.py, which can achieve Logistic Regression and visualization of data point, results and effect on cost. The two parameters that users can tweak are learn_rate(learning rate in gradiant decent) and iter(iteration in training). Users can use this class by:
 >from LogisticRegression import LogisticRegression
-### **1.2 method**
-####fit(X_train,Y_train)
+### **1.2 Method**
+#### fit(X_train,Y_train)
 This method is used for training model and plot the effect on cost function. The inputs are X_train and Y_train, X_train should be ndarray of shape (num_sample, dim), Y_train should be ndarray of shape (num_sample, ). Users can use this method by:
 >LogisticRegression.fit(X_train,Y_train)
-####predict(X)
+#### predict(X)
 This method is used for predict class labels for samples in X.The input X should be ndarray of shape (num_sample, dim). Users can use this method by:
 >LogisticRegression.predict(X)
-####score(X_test,Y_test)
+#### score(X_test,Y_test)
 This method is used for return the mean accuracy on the given test data and plot the data points with predicted labels and ground truth labels. The inputs are X_test and Y_test, X_test should be ndarray of shape (num_sample, dim), Y_test should be ndarray of shape (num_sample, ). Users can use this method by:
 >LogisticRegression.score(X_train,Y_train)
 ## 2. Concept and Implementation details:
